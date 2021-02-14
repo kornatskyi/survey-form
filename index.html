@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">What is your favorite coffee?</h1>
+    <p id="description">Let us know better what is your favorite coffee.</p>
+    <form action="" id="survey-form">
+        <label for="name" id="name-label"><p>Name</p>
+            <input type="text" id="name" placeholder="Your name"></label>
+        <label for="email" id="email-label"><p>Email</p>
+            <input type="email" id="email" required placeholder="email@some.com"></label>
+        <label for="number" id="number-label"><p>Phone number</p>
+            <input type="text" id="number" min="5" max="10" required placeholder="Phone number"></label>
+        <div class="gender-section">
+            <p>Gender</p>
+            <select name="gender" id="dropdown">
+                <option disabled selected value>Select an option</option>
+                <option value="Male" id="">Male</option>
+                <option value="Female" id="">Female</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>1. What process do you like?</p>
+            <label><input type="radio" name="process" checked>Drip</label>
+            <label><input type="radio" name="process">Espresso</label>
+            <label><input type="radio" name="process">French press</label>
+        </div>
+        <div class="form-group">
+            <p>2. How light or dark do you like your coffee?</p>
+            <select name="roast" id="roast">
+                <option disabled selected value>Select an option</option>
+                <option value="dark">Dark</option>
+                <option value="light">Light</option>
+                <option value="medium">Medium</option>
+            </select>
+
+        </div>
+        <div class="form-group">
+            <p>3. What flavors do you like in coffee?</p>
+            <span class="clue">(Check all that apply)</span>
+            <label><input type="checkbox" name="flavor" value="honey">Honey</label>
+            <label><input type="checkbox" name="flavor" value="floral">Floral</label>
+            <label><input type="checkbox" name="flavor" value="nuts">Nuts</label>
+            <label><input type="checkbox" name="flavor" value="berries">Berries</label>
+            <label><input type="checkbox" name="flavor" value="chocolate">Chocolate</label>
+            <label><input type="checkbox" name="flavor" value="caramel">Caramel</label>
+            <label><input type="checkbox" name="flavor" value="grape">Grape</label>
+            <label><input type="checkbox" name="flavor" value="syrupy" />Syrupy</label>
+
+
+        </div>
+        <div class="form-group">
+            <p>4. Describes coffees that you like?</p>
+            <textarea class="input-textareat" rows="6" name="description" placeholder="Enter your description here..."></textarea>
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+
+
+</body>
+
+</html>
